@@ -1,0 +1,28 @@
+  .search {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+
+  main {
+    text-align: center;
+    margin: 0 auto;
+    height: 100vh;
+  }
+
+ 
+
+  .imgUrlText
+  {
+      font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+      font-size: 12px;
+      font-style: italic;
+      font-variant: normal;
+      font-weight: bold;
+      margin: 0 auto;
+  }
+  
+  .center {
+    text-align: center;
+  }
+  

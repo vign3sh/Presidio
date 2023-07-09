@@ -1,0 +1,23 @@
+  .search {
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  main {
+    text-align: center;
+    margin: 0 auto;
+    height: 100vh;
+  }
+
+ 
+
+  input[type="text"] {
+    transform: translateY(-50%);
+  }

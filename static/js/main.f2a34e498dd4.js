@@ -1,0 +1,62 @@
+document.getElementById("add").onclick = function() {
+    //First things first, we need our text:
+    var t = $("#ques").val(); 
+    $("#ques").val(''); //Clears the input field
+    $("#ques_list").append(`<li>${t}</li>`)
+    var ques=$("#questions").val();
+    if (ques){
+        // convert json to js object
+        var ques = JSON.parse(ques);
+    }
+    else{
+        var ques = [];
+    }
+    // add new question to the list
+    ques.push(t);
+    // convert js object to json
+    ques = JSON.stringify(ques);
+    // update the hidden input field
+    $("#questions").val(ques);
+    // enable the submit button
+    $("#getAnswer").prop("disabled", false);
+    
+}
+
+// When the page loads make a fetch request to get the answer
+$(document).ready(function(){
+    var texts=JSON.parse($('#texts').val())
+    texts=JSON.stringify(texts)
+    console.log(texts)
+    $.ajax({
+        type: "GET",
+        url: "/encode",
+        data: {
+            "texts": texts,
+        },
+        success: function (data) {
+            console.log("success");
+            console.log(data);
+        },
+        failure: function (data) {
+            console.log("failure");
+            console.log(data);
+        },
+    });
+
+
+    /*//make a fetch request with JSON data of texts
+    fetch('/encode', {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({texts: texts})
+    }).then(function(response){
+        //convert response to json
+        response.json().then(function(data){
+            //update the answer
+            $("#answer").text(data.answer);
+        })
+    });*/
+    
+});

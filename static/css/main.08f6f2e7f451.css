@@ -1,0 +1,43 @@
+  .search {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+
+ 
+
+
+  .search {
+    height:100vh;
+    display: flex;
+  }
+  
+  .imgUrlText {
+    width: 300px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: auto auto;
+  }
+
+  .search{
+    height:100vh;
+    display: flex;
+  }
+ 
+
+  .imgUrlText1
+  {
+      font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+      font-size: 12px;
+      font-style: italic;
+      font-variant: normal;
+      font-weight: bold;
+      margin: 0 auto;
+  }
+  
+  .center {
+    text-align: center;
+  }
+  

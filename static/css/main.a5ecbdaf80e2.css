@@ -1,0 +1,22 @@
+.search{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .searchBox {
+    width: 90%;
+    height: 75;
+    font-size: xx-large;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: auto auto 0;
+    text-align: center;
+  }
+
+  .searchButton{
+    width: 250;
+    margin: 20 auto auto;
+  }
+ 
