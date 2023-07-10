@@ -13,7 +13,7 @@ This application accepts a topic as a string input from the user, searches the i
 Requirements:-
 <br/>
 <br/>
-1. API key for Serpwow. Gives 100 free keys.<br/>
+1. API key for Serpwow. Gives 100 free searches.<br/>
 2. PALM API access key. Request the free api key from the link mentioned in the top answer [here](https://www.googlecloudcommunity.com/gc/AI-ML/Google-Bard-API/m-p/538517)
 <br/>
 <br/>
